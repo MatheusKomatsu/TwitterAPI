@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "twitterappp"
+version = "1.0.0"
+description = "teste"
+authors = ["Matheus Eiji Faria Komatsu <matheuskomatsu@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tweepy = "^4.14.0"
+pymongo = "^4.7.2"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+flake8 = "^7.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
